@@ -1,5 +1,5 @@
 <?php
-//https://api.telegram.org/bot5697652977:AAG4fLWeS3J6AFOxdtnqNXbQEmHEs_4y5rs/setwebhook?url=https://promangal92.online/
+//https://api.telegram.org/bot{TOKEN}/setwebhook?url=URLbot/
 class Sms  //класс Sms не знаю почему класс,по сути можно заменить функцией
     // тут отправляем в общем наш запрос в телегу
 {
@@ -20,7 +20,7 @@ class Sms  //класс Sms не знаю почему класс,по сути 
     } }
 $data = json_decode(file_get_contents('php://input'), TRUE);//декодим Джесон в массив в переменную дата
 file_put_contents('file.txt', '$data: '.print_r($data, 1)."\n", FILE_APPEND); // создаем файл куда пишем всю историю наших входящих сообщений
-$token = '5697652977:AAG4fLWeS3J6AFOxdtnqNXbQEmHEs_4y5rs';
+$token = 'TOKEN';
 
 # ниже проверяем команды полученные от бота
 //СТАРТ
